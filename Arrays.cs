@@ -77,6 +77,44 @@ public class Program
 			Console.WriteLine("The person is NOT in this class.");
 		}
 		
+		
+		//Useful Array Methods
+	//Binary search
+		int[] myArrays = {5, 10, 14, 45, 64, 75, 86};
+		Console.WriteLine("Enter a number to check if it exists. ");
+		int number = int.Parse(Console.ReadLine());
+		
+		
+		int answer = Array.BinarySearch(myArrays, number);
+		if(answer < 0)
+		{
+			Console.WriteLine("The number does not exist.");
+		}
+		else
+		{
+			Console.WriteLine("The numbers position in this array is {0}", answer);
+		}
+		
+	//Array sorting
+		int[] myArray1 = {5, 45, 2, 75, 34, 11};
+		Array.Sort(myArray1);
+		for(int i = 0; i < myArray1.Length; i++)
+		{
+			Console.WriteLine(myArray1[i]);
+		}
+		
+		Console.WriteLine(" ");
+		
+		
+	//Array reverse
+		int[] myArray2 = {34, 35, 64, 23, 75, 90};
+		Array.Reverse(myArray2);
+		for(int i = 0; i < myArray.Length; i++)
+		{
+			Console.WriteLine(myArray2[i]);
+		}
+		
+		
 	}
 }
 
