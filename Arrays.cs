@@ -45,6 +45,38 @@ public class Program
 			Console.WriteLine("The person is not in this class.");
 		}
 		
+		
+		
+	//parallel loops
+		
+		string[] students = {"Redee", "Theo", "Jujuu", "Aku", "Serwaa", "Abena"};
+		int[] grades = {78, 67, 56, 48, 90, 60};
+		
+		Console.Write("Enter name - ");
+		string namesOfStudents = Console.ReadLine();
+		
+		bool contain = false;
+		int studentGrade = 0;
+		for(int i = 0; i < students.Length; i++)
+		{
+			if(namesOfStudents == students[i])
+			{
+				contain = true;
+			 	studentGrade = grades[i];
+				break;
+			}
+		}
+		if(contain == true)
+		{
+			Console.WriteLine("The person is in this class.");
+			Console.WriteLine("The students grade is " + studentGrade);
+
+		}
+		else
+		{
+			Console.WriteLine("The person is NOT in this class.");
+		}
+		
 	}
 }
 
